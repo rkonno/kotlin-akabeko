@@ -21,4 +21,10 @@ fun main(args: Array<String>) {
       println(quantity)
     }
   }
+
+  bucket.printQuantity()  // 「0」と出力される
+  bucket.fill()
+  bucket.printQuantity()  // 「5」と出力される
+  bucket.drainAway()
+  bucket.printQuantity()  // 「0」と出力される
 }
